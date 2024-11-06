@@ -6,7 +6,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Site Metas -->
   <meta name="keywords" content="" />
   <meta name="description" content="" />
@@ -19,6 +19,7 @@
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
   <!-- fonts style -->
 
   <!--owl slider stylesheet -->
@@ -31,7 +32,9 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-
+  <!-- <script src= "js/bootstrap.js"></script> -->
+  <script src= "js/bootstrap_ext.js"></script>
+  
   <script>
     // Show or hide the Back to Top button based on scroll position
     window.addEventListener('scroll', function() {
@@ -48,6 +51,7 @@
       }
     });
   </script>
+          
 </head>
 
 <body>
@@ -56,38 +60,44 @@
     <!-- header section strats -->
      <section id="header_section">
     <header class="header_section">
-        <div class="d-flex justify-content-between align-items-center">
+        <div>
             <a class="navbar-brand" href="index.html">
               <img src="images/logoenglish.png" width="300px" height="100px" alt="English Logo">
             </a>
             <a class="navbar-brand" href="index.html">
-              <img src="images/logoarabic.png" width="300px" height="100px" alt="Arabic Logo">
+              <img src= "images/logoarabic.png" width="300px" height="100px" alt="Arabic Logo">
             </a>
           </div>
-        <div class="header_bottom">
-          <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class=""> </span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#home_section">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about_section">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#service_section"> Services</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact_section">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-      </div>
+          <div class="header_bottom">
+            <nav class="navbar navbar-expand-lg custom_nav-container navbar-dark">
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarToggler" 
+                        aria-controls="navbarToggler" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                  <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#home_section">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#about_section">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#service_section">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#contact_section">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
     </header>
   </section>
     <!-- end header section -->
@@ -125,7 +135,6 @@
           </div>
       </div>
     </section>
-
   </div>
 
   <section class="home_section layout_padding2_top" id = "home_section">
@@ -260,27 +269,31 @@
           </p>
         </div>
         
-        <!-- Export -->
         <div class="col-md-4">
           <div class="img-box layout_padding2_bottom">
             <img src="images/export.jpg" alt="">
           </div>
         </div>
         </div>  
-        
+
+        <!-- Export -->
+
         <div class="row">
+        
           <div class="col-md-4">
+            
+  
             <div class="img-box layout_padding2_bottom">
               <img src="images/export.jpg" alt="">
             </div>
           </div>
+
           <div class="col-md-8">
             <div class="heading_container">
-
-          <h2>
-            <span> Export & Global Distribution</span>
-          </h2>
-        </div>
+              <h2>
+                <span> Export & Global Distribution</span>
+              </h2>
+            </div>
           <p>
             We understand that timely and reliable delivery is essential. Our global distribution
             network is designed to ensure that our products reach clients in India and other
