@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("fonts.css");
 body {
   font-family: 'Open Sans', sans-serif;
   color: #0c0c0c;
@@ -17,7 +17,6 @@ body {
 .layout_padding3 {
   padding: 35px 0;
 }
-
 
 .layout_padding2-top {
   padding-top: 50px;
@@ -45,6 +44,20 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.export_heading_container{
+  display: flex;
+  justify-content: flex-end; 
+}  
+.export_heading_container h2 {
+  position: relative;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.export_heading_container h2 span {
+  color: #0a97b0;
 }
 
 .heading_container h2 {
@@ -238,10 +251,14 @@ html {
   color: #000000;
 }
 
-
+.export{
+  margin-right: 0%;
+}
 .custom_nav-container .navbar-nav {
   margin-left: auto;
 }
+
+
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 5px 20px;
@@ -574,6 +591,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+    padding: 3%;
 }
 
 .service_section .img-box {
