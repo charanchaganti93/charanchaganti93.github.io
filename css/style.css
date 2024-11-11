@@ -46,10 +46,32 @@ body {
           align-items: flex-start;
 }
 
+#header_section {
+  width: 100%;
+  background-color: #fff; /* Adjust background color as needed */
+}
+
+/* Default logo sizes */
+.logo {
+  display: flex;
+  width: 300px;
+  height: 100px;
+}
+
+/* Media query for small screens (max-width: 400px) */
+@media screen and (max-width: 400px) {
+  .logo {
+    width: 75px;  /* Adjust logo size on small mobile screens */
+    height: auto;  /* Maintain aspect ratio */
+  }
+}
+
+
 .export_heading_container{
   display: flex;
   justify-content: flex-end; 
 }  
+
 .export_heading_container h2 {
   position: relative;
   font-weight: bold;
@@ -234,9 +256,9 @@ html {
     /* padding: 20px; /* Add some padding as needed */
 } */
 
-.header_section .navbar-brand {
+/* .header_section .navbar-brand {
     max-width: 300px; /* Adjust if needed */
-}
+/* } */
 
 .d-flex {
     display: flex;
@@ -244,12 +266,12 @@ html {
     align-items: center;
 }
 
-
+/* 
 .navbar-brand span {
   font-weight: bold;
   font-size: 20px;
   color: #000000;
-}
+} */
 
 .export{
   margin-right: 0%;
@@ -603,7 +625,6 @@ html {
   max-width: 100%;
   position: relative;
   z-index: 2;
-
 }
 
 .service_section .img-box::before, .service_section .img-box::after {
