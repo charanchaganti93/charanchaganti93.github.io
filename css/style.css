@@ -53,19 +53,22 @@ body {
 
 /* Default logo sizes */
 .logo {
-  display: flex;
   width: 300px;
   height: 100px;
+  justify-content:space-between;
 }
 
 /* Media query for small screens (max-width: 400px) */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   .logo {
-    width: 75px;  /* Adjust logo size on small mobile screens */
-    height: auto;  /* Maintain aspect ratio */
+    width: 200px;
+    height: auto;
   }
 }
-
+.logobar{
+  display: flex;
+  justify-content: space-between;
+}
 
 .export_heading_container{
   display: flex;
